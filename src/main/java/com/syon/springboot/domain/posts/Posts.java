@@ -35,5 +35,10 @@ public class Posts {
         this.author = author;
     }
 
+    public void update(String title, String Content){
+        this.title = title;
+        this.content = content;
+    }
+
 
 }
