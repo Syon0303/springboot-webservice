@@ -1,5 +1,6 @@
 package com.syon.springboot.domain.posts;
 
+import com.syon.springboot.domain.BaseTimeEntity;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -13,7 +14,7 @@ import javax.persistence.*;
 @Entity
 //Setter method 가 없음. Entity method 에서는 절대 Setter 를 생성하지 않는다.
 //해당 프로젝트에서는 @Builder 를 통해 제공되는 Builder Class 사용.
-public class Posts {
+public class Posts extends BaseTimeEntity {
 
     @Id
     //GenerationType.IDENTITY = auto increment
